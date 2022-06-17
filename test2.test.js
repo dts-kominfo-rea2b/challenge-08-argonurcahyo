@@ -31,7 +31,7 @@ describe("Checking the JS Function", () => {
   it("renders new li when press enter on input", async () => {
     const input = document.getElementById("todo-input");
 
-    fireEvent.keyPress(input, { key: "Enter", code: 13, charCode: 13 });
+    fireEvent.keyPress(input, { key: "Enter", code: 13, charCode: 13 });    
 
     let todo = document.querySelectorAll("#todo-output li");
     expect(todo.length).toBe(2);
